@@ -1468,6 +1468,15 @@ void _glfwSetWindowDecoratedCocoa(_GLFWwindow* window, GLFWbool enabled)
     } // autoreleasepool
 }
 
+
+void _glfwSetWindowTitlebarCocoa(_GLFWwindow* window, GLFWbool enabled)
+{
+    // TODO 
+    _glfwInputError(GLFW_FEATURE_UNIMPLEMENTED, 
+        "Cocoa: Window attributes settings not yet implemeted.");
+}
+
+
 void _glfwSetWindowFloatingCocoa(_GLFWwindow* window, GLFWbool enabled)
 {
     @autoreleasepool {

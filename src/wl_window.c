@@ -2183,6 +2183,12 @@ void _glfwSetWindowDecoratedWayland(_GLFWwindow* window, GLFWbool enabled)
             destroyFallbackDecorations(window);
     }
 }
+void _glfwSetWindowTitlebarWayland(_GLFWwindow* window, GLFWbool enabled)
+{
+    // TODO 
+    _glfwInputError(GLFW_FEATURE_UNIMPLEMENTED,
+                  "Wayland: Window attributes settings not yet implemeted.");
+}
 
 void _glfwSetWindowFloatingWayland(_GLFWwindow* window, GLFWbool enabled)
 {

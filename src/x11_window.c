@@ -2642,7 +2642,12 @@ void _glfwSetWindowDecoratedX11(_GLFWwindow* window, GLFWbool enabled)
                     (unsigned char*) &hints,
                     sizeof(hints) / sizeof(long));
 }
-
+void _glfwSetWindowTitlebarX11(_GLFWwindow* window, GLFWbool enabled)
+{
+    // TODO 
+    _glfwInputError(GLFW_FEATURE_UNIMPLEMENTED,
+                  "x11: Window attributes settings not yet implemeted.");
+}
 void _glfwSetWindowFloatingX11(_GLFWwindow* window, GLFWbool enabled)
 {
     if (!_glfw.x11.NET_WM_STATE || !_glfw.x11.NET_WM_STATE_ABOVE)
